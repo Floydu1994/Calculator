@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Number" />
+
+        <EditText
+            android:id="@+id/firstNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Second number" />
+
+        <EditText
+            android:id="@+id/secondNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"/>
+            <RadioButton
+                android:id="@+id/substractButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Substract"/>
+            <RadioButton
+                android:id="@+id/multiplyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multiply "/>
+            <RadioButton
+                android:id="@+id/dividyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dividy"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result" />
+        <EditText
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="348dp">
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear"
+                android:onClick="clearButtonClick"/>
+
+            <Button
+                android:id="@+id/buttonCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Calculate"
+                android:onClick="calculateButtonClick"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>
+
+
